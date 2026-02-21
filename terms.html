@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Terms | Simple Summary</title>
+  <meta name="description" content="Basic terms summary for the platform and service." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="canonical" href="https://example.com/terms.html" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="container">
+      <div class="nav">
+        <a class="brand" href="index.html"><div class="logo"></div><span>[APP / BUSINESS NAME]</span></a>
+        <button class="mobileToggle" data-mobile-toggle aria-label="Open menu">Menu</button>
+        <div class="navlinks">
+          <a href="index.html">Home</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="cookies.html">Cookies</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="navcta">
+          <a class="btn primary" href="contact.html#demo">Book a demo</a>
+        </div>
+      </div>
+      <div class="card soft" data-mobile-menu data-open="false" style="display:none; margin:0 0 14px 0;">
+        <a class="btn" style="width:100%; margin-bottom:10px;" href="privacy.html">Privacy</a>
+        <a class="btn" style="width:100%; margin-bottom:10px;" href="cookies.html">Cookies</a>
+        <a class="btn primary" style="width:100%;" href="contact.html#demo">Book a demo</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container section">
+    <div class="kicker">Terms</div>
+    <h1 style="font-size:var(--h1); margin-top:0;">Terms in plain English (summary)</h1>
+
+    <div class="trustStrip" style="margin-top:14px;">
+      <strong>Money handling:</strong> We do not hold client funds. Funds are held and released by our escrow/PBA partner.
+    </div>
+
+    <div class="card" style="margin-top:16px;">
+      <h2>What we provide</h2>
+      <ul class="list">
+        <li>A platform for milestones, evidence, approvals, and reporting.</li>
+        <li>Optional service delivery (e.g., construction management) where agreed.</li>
+      </ul>
+
+      <h2>What we do not do</h2>
+      <ul class="list">
+        <li>We do not hold client funds.</li>
+        <li>We do not provide tax or legal advice.</li>
+        <li>We do not guarantee outcomes (including VAT outcomes).</li>
+      </ul>
+
+      <h2>Your responsibilities</h2>
+      <ul class="list">
+        <li>Provide accurate project details.</li>
+        <li>Approve milestones based on your own judgement.</li>
+        <li>Use trusted contact methods for bank detail verification.</li>
+      </ul>
+
+      <p class="small muted">Replace this summary with solicitor-reviewed terms before launch.</p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="small">
+        <strong>Disclaimer:</strong> We do not hold client funds. Funds are held and released by our escrow/PBA partner.
+        We don’t provide tax or legal advice.
+      </p>
+      <div class="small muted">© <span id="y"></span> [APP / BUSINESS NAME].</div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
