@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact | Book a Demo or Join the Waitlist</title>
+  <meta name="description" content="Talk to us. Book a demo, ask a question, or start a pilot project." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="canonical" href="https://example.com/contact.html" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="container">
+      <div class="nav">
+        <a class="brand" href="index.html"><div class="logo"></div><span>[APP / BUSINESS NAME]</span></a>
+        <button class="mobileToggle" data-mobile-toggle aria-label="Open menu">Menu</button>
+        <div class="navlinks">
+          <a href="how-it-works.html">How it works</a>
+          <a href="escrow-security.html">Escrow/PBA security</a>
+          <a href="use-cases.html">Use cases</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="faq.html">FAQs</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="navcta">
+          <a class="btn ghost" href="#waitlist">Join waitlist</a>
+          <a class="btn primary" href="#demo">Book a demo</a>
+        </div>
+      </div>
+      <div class="card soft" data-mobile-menu data-open="false" style="display:none; margin:0 0 14px 0;">
+        <div class="grid2">
+          <div>
+            <a class="btn" style="width:100%; margin-bottom:10px;" href="how-it-works.html">How it works</a>
+            <a class="btn" style="width:100%; margin-bottom:10px;" href="escrow-security.html">Escrow/PBA security</a>
+            <a class="btn" style="width:100%; margin-bottom:10px;" href="use-cases.html">Use cases</a>
+          </div>
+          <div>
+            <a class="btn" style="width:100%; margin-bottom:10px;" href="pricing.html">Pricing</a>
+            <a class="btn" style="width:100%; margin-bottom:10px;" href="faq.html">FAQs</a>
+            <a class="btn primary" style="width:100%;" href="#demo">Book a demo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container section">
+    <div class="kicker">Contact</div>
+    <h1 style="font-size:var(--h1); margin-top:0;">Let’s talk</h1>
+
+    <div class="trustStrip" style="margin-top:14px;">
+      <strong>Money handling:</strong> We do not hold client funds. Funds are held and released by our escrow/PBA partner.
+    </div>
+
+    <div class="grid2" style="margin-top:16px;">
+      <div class="card" id="demo">
+        <div class="kicker">Book a demo</div>
+        <h2>See the flow in 10 minutes</h2>
+        <p class="small">
+          Milestones → evidence → approval → release via escrow/PBA partner.
+        </p>
+
+        <!-- OPTION A: Formspree -->
+        <!-- Replace action with your Formspree endpoint, e.g. https://formspree.io/f/xxxxxx -->
+        <form method="POST" action="https://formspree.io/f/yourFormId">
+          <div class="formGrid">
+            <div>
+              <label for="name">Name</label>
+              <input id="name" name="name" required />
+            </div>
+            <div>
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" />
+            </div>
+          </div>
+
+          <div class="formGrid" style="margin-top:12px;">
+            <div>
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required />
+            </div>
+            <div>
+              <label for="type">Project type</label>
+              <select id="type" name="type">
+                <option>Construction</option>
+                <option>Agency</option>
+                <option>Events</option>
+                <option>Freelance</option>
+                <option>Property</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div style="margin-top:12px;">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell us what you’re trying to pay for, and how many payees you have."></textarea>
+          </div>
+
+          <!-- Honeypot (spam trap): keep hidden -->
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+
+          <div class="helper">
+            By submitting, you agree we can contact you about your enquiry. See Privacy for details.
+          </div>
+
+          <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;">
+            <button class="btn primary" type="submit">Request a demo</button>
+            <a class="btn" href="[WHATSAPP LINK]">WhatsApp us</a>
+          </div>
+        </form>
+
+        <div class="note">
+          VAT note: VAT depends on the project and each supplier’s VAT status. Savings vary.
+          We charge VAT on our management fee where applicable. We don’t provide tax advice.
+        </div>
+      </div>
+
+      <div class="card" id="waitlist">
+        <div class="kicker">Join waitlist</div>
+        <h2>Be first in line</h2>
+        <p class="small">Tell us your industry and we’ll invite you to the next pilot slots.</p>
+
+        <form method="POST" action="https://formspree.io/f/yourFormId">
+          <div>
+            <label for="wlEmail">Email</label>
+            <input id="wlEmail" name="email" type="email" required />
+          </div>
+          <div style="margin-top:12px;">
+            <label for="wlIndustry">Industry</label>
+            <input id="wlIndustry" name="industry" placeholder="Construction, events, agency, etc." />
+          </div>
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+          <div style="margin-top:12px;">
+            <button class="btn primary" type="submit">Join waitlist</button>
+          </div>
+        </form>
+
+        <hr class="line" />
+
+        <h3>Contact details</h3>
+        <p class="small">
+          Phone: <strong>[PHONE]</strong><br/>
+          Email: <strong>[EMAIL]</strong><br/>
+          WhatsApp: <strong>[WHATSAPP LINK]</strong>
+        </p>
+        <p class="small muted">We usually reply within 1 business day.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footerGrid">
+        <div>
+          <strong>[APP / BUSINESS NAME]</strong>
+          <p class="small" style="margin-top:8px;">
+            <strong>Disclaimer:</strong> We do not hold client funds. Funds are held and released by our escrow/PBA partner.
+            We don’t provide tax or legal advice.
+          </p>
+        </div>
+        <div>
+          <strong>Pages</strong><br/>
+          <a href="index.html">Home</a><br/>
+          <a href="how-it-works.html">How it works</a><br/>
+          <a href="escrow-security.html">Escrow/PBA security</a><br/>
+          <a href="use-cases.html">Use cases</a><br/>
+          <a href="pricing.html">Pricing</a><br/>
+        </div>
+        <div>
+          <strong>Legal</strong><br/>
+          <a href="privacy.html">Privacy</a><br/>
+          <a href="terms.html">Terms</a><br/>
+          <a href="cookies.html">Cookies</a><br/>
+          <a href="faq.html">FAQs</a><br/>
+        </div>
+      </div>
+      <hr class="line" />
+      <div class="small muted">© <span id="y"></span> [APP / BUSINESS NAME].</div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
